@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@dvince_gamedev | Link Hub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="profile-wrapper">
+        <div class="profile-header">
+            <div class="avatar-container">
+                <img src="assets/images/avatar.jpg" alt="Avatar">
+            </div>
+            <h1>@dvince_gamedev</h1>
+            <h2>Music Composer & Sound Engineer</h2>
+        </div>
+
+        <div class="links-list">
+            <a href="mailto:vinccorporated+biz@gmail.com" class="link-card">
+                <div class="card-icon-container">
+                    <img src="assets/images/email-icon.png" alt="Email Icon">
+                </div>
+                <div class="link-content">
+                    <span class="link-title">Email Me</span>
+                    <span class="link-subtitle">vinccorporated+biz@gmail.com</span>
+                </div>
+            </a>
+
+            <a href="https://www.youtube.com/watch?v=x6WvzQcX2aE" target="_blank" rel="noopener noreferrer" class="link-card featured" id="featuredCard1">
+                <div class="media-container" title="Hover to preview OST">
+                    <div class="image-wrapper">
+                        <img src="assets/images/ost-thumb.jpg" class="static-thumb" alt="OST Thumbnail">
+                        <img src="assets/images/ost-preview.gif" class="gif-preview" id="gifPreview1" alt="OST Preview GIF">
+                    </div>
+                </div>
+
+                <div class="link-content">
+                    <div class="link-title-wrapper">
+                        <span class="link-title">UNSTABLE JAZZ MIXTAPE</span>
+                        <span class="link-subtitle">from Sukebat! Prototype</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://www.youtube.com/watch?v=hOurVk3HfUE" target="_blank" rel="noopener noreferrer" class="link-card featured" id="featuredCard2">
+                <div class="media-container" title="Hover to preview OST">
+                    <div class="image-wrapper">
+                        <img src="assets/images/ost-thumb2.jpg" class="static-thumb" alt="EnMA Thumbnail">
+                        <img src="assets/images/ost-preview.gif" class="gif-preview" id="gifPreview2" alt="EnMA Preview GIF">
+                    </div>
+                </div>
+
+                <div class="link-content">
+                    <div class="link-title-wrapper">
+                        <span class="link-title">EnMA</span>
+                        <span class="link-subtitle">for Composing Jam 9</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://youtube.com/@dvince6678" target="_blank" class="link-card">
+                <div class="card-icon-container">
+                    <img src="assets/images/youtube-icon.png" alt="Portfolio Icon">
+                </div>
+                <div class="link-content">
+                    <span class="link-title">My music portfolio</span>
+                </div>
+            </a>
+
+            <a href="https://dvince.itch.io/" target="_blank" class="link-card">
+                <div class="card-icon-container">
+                    <img src="assets/images/itch-icon.png" alt="Itch.io Icon">
+                </div>
+                <div class="link-content">
+                    <span class="link-title">My itch.io page</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="profile-footer">
+            <p>STUDIODVNC 2026</p>
+        </div>
+    </div>
+
+    <script>
+        const card1 = document.getElementById('featuredCard1');
+        const gif1 = document.getElementById('gifPreview1');
+        if (gif1) {
+            gif1.onload = () => card1.classList.add('has-gif');
+            gif1.onerror = () => gif1.remove();
+        }
+
+        const card2 = document.getElementById('featuredCard2');
+        const gif2 = document.getElementById('gifPreview2');
+        if (gif2) {
+            gif2.onload = () => card2.classList.add('has-gif');
+            gif2.onerror = () => gif2.remove();
+        }
+    </script>
+</body>
+</html>
